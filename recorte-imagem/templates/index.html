@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Primeiro passo Flask</title>
+</head>
+<body>
+
+    <h1>Servidor Flask funcionando</h1>
+    <p>Se você está vendo esta página, o backend entregou este HTML</p>
+    <h1>Passo 2 - Enviar formulário para o Flask</h1>
+
+    <form action="/enviar" method="POST"
+        label for=""nome>Digite seu nome
+        <input type="text" id="nome" name="nome" required>
+        <button type="submit">Enviar</button>
+    </form>
+    
+
+    <h1>Passo 3 - Enviar imagem para o Flask</h1>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="imagem">Escolha uma imagem:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" required>
+        <button type="submit">Enviar Imagem</button>
+    </form>
+</body>
+</html>
